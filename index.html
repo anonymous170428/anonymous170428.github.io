@@ -31,13 +31,39 @@
       <section id="main_content" class="inner">
         This is the accompanying web page for the following paper:<br>
 
-        <ul>
-          <li>Anonymous<br>
-          <strong>SCALE- AND RHYTHM-AWARE MUSICAL NOTE ESTIMATION FOR
-VOCAL F0 TRAJECTORIES BASED ON A SEMI-TATUM-SYNCHRONOUS
-HIERARCHICAL HIDDEN SEMI-MARKOV MODEL</strong><br>
-          Submitted to ISMIR 2017</a>
-        </ul>
+        <h2>SCALE- AND RHYTHM-AWARE MUSICAL NOTE ESTIMATION FOR <br>
+        VOCAL F0 TRAJECTORIES BASED ON A SEMI-TATUM-SYNCHRONOUS <br>
+        HIERARCHICAL HIDDEN SEMI-MARKOV MODEL</h2>
+
+        <h3>Abstract</h3>
+        <p>
+This paper presents a statistical method
+  that estimates a musically-natural sequence of musical notes
+  from a vocal F0 trajectory.
+Since the onset times and F0s of sung notes are considerably deviated
+  from the tatums and pitches indicated in a musical score,
+  a score model is crucial for improving time-frequency quantization of F0s.
+We therefore propose a hierarchical hidden semi-Markov model (HSMM)
+  that combines a score model representing the rhythms and pitches of musical notes under musical scales
+  with an F0 model representing the time-frequency deviations of F0s from the score.
+In the score model,
+  musical scales are generated stochastically and
+  note pitches are then generated according to the scales.
+To make rhythms,
+  note onsets follow a Markov process defined on the tatum grid.
+In the F0 model,
+  onset time deviations, smooth inter-note F0 transitions, and F0 fluctuations
+  are added to the score stochastically.
+Given an F0 trajectory,
+  we estimate the most likely sequence of musical notes
+  while giving more importance on the score model than the F0 model.
+Experimental results showed that
+  the proposed method outperformed an HMM-based method having no models of scales and rhythms.
+        </p>
+        <!-- <ul> -->
+        <!--   <li>Anonymous<br>           -->
+        <!--   Submitted to ISMIR 2017</a> -->
+        <!-- </ul>                         -->
 
         <h2>Demo</h2>
       </section>
