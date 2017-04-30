@@ -14,7 +14,19 @@
       ol.multi-column {float: left; width: 100%; line-height: 10px;}
       ol.multi-column li {float: left; width: 50%; margin-bottom: 10px;}
     </style>
-
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { equationNumbers: { autoNumber: "AMS" }},
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        },
+        "HTML-CSS": { matchFontHeight: false },
+        displayAlign: "left",
+        displayIndent: "2em"
+      });
+    </script>
   </head>
 
   <body>
@@ -59,6 +71,38 @@
           while giving more importance on the score model than the F0 model.
           Experimental results showed that
           the proposed method outperformed an HMM-based method having no models of scales and rhythms.
+        </p>
+
+        <p>
+          You can get the latest version of our paper from here.
+          <a href="./doc/ismir2017.pdf" target="_blank">[PDF]</a>
+        </p>
+
+        <h3>Errata</h3>
+        <p>
+          Corrections from the submitted version are shown below.
+        </p>
+        <!-- <p>  -->
+        <!-- </p> -->
+        <!-- Figure 4 :                                                                -->
+        <!-- (Incorrect)$k_{j-1}, k_{j}, s_{j-1}, s_{j}, h_{n-l_j}, h_{n} \rightarrow$ -->
+        <!-- (Correct)$p_{j-1}, p_{j}, d_{j-1}, d_{j}, u_{n-l_j}, u_{n}$               -->
+        <table>
+        <tr>
+        <td>Page</td>
+        <td>Location</td>
+        <td>Incorrect</td>
+        <td>Correct</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>Figure 4</td>
+        <td>$k_{j-1}, k_{j}, s_{j-1}, s_{j}, h_{n-l_j}, h_{n}$</td>
+        <td>$p_{j-1}, p_{j}, d_{j-1}, d_{j}, u_{n-l_j}, u_{n}$</td>
+        </tr>
+        </table>
+
+        <p>
         </p>
         <!-- <h3>Correction the</h3> -->
         <!-- <ul> -->
